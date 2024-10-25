@@ -1,15 +1,15 @@
-import '../../src/auth/signin/presentation/signin_page.dart';
-import '../../src/auth/signin/presentation/splash_page.dart';
+import '../../src/colors/presentation/colors_page.dart';
+import '../../src/home/presentation/home_page.dart';
 import '../../src/profile/presentation/profile_page.dart';
 
 abstract class AppRoutes {
-  static const String splash = '/splash';
-  static const String signIn = '/signIn';
   static const String profile = '/profile';
+  static const String home = '/home';
+  static const String colors = '/colors';
 
   static final routes = {
-    splash: (context) => const SplashPage(),
-    signIn: (context) => const SignInPage(),
     profile: (context) => const ProfilePage(),
+    home: (context) => const HomePage(),
+    colors: (context) => const ColorsPage(),
   };
 }
