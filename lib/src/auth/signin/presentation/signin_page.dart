@@ -36,7 +36,7 @@ class _SignInPageState extends State<SignInPage> {
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                   image: DecorationImage(
-                    image: AssetImage('assets/icons/icon.jpeg'),
+                    image: AssetImage('assets/icons/icon.jpg'),
                   ),
                 ),
               ),

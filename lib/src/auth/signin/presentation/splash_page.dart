@@ -29,7 +29,7 @@ class _SplashPageState extends State<SplashPage> {
         tag: 'hero-logo',
         child: Center(
           child: Image.asset(
-            'assets/icons/icon.jpeg',
+            'assets/icons/icon.jpg',
             width: 200,
             height: 200,
           ),
