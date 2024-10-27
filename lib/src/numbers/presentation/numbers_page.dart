@@ -55,14 +55,14 @@ class _NumbersPageState extends State<NumbersPage> {
             margin: const EdgeInsets.all(8),
             child: ListTile(
               title: Text(
-                number.numberQuechua,
+                number.quechua,
                 style: const TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               subtitle: Text(
-                '(${number.numberSpanish})',
+                '(${number.spanish})',
                 style: const TextStyle(
                   fontStyle: FontStyle.italic,
                   color: Colors.grey,

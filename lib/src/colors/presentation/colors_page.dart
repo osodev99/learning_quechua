@@ -57,33 +57,33 @@ class _ColorsPageState extends State<ColorsPage> {
             color: ColorUtil.hexToColor(color.colorHex),
             child: ListTile(
               title: Text(
-                color.colorQuechua,
+                color.quechua,
                 style: TextStyle(
-                  color: color.colorSpanish == 'Blanco' ||
-                          color.colorSpanish == 'Amarillo'
-                      ? Colors.black
-                      : Colors.white,
+                  color:
+                      color.spanish == 'Blanco' || color.spanish == 'Amarillo'
+                          ? Colors.black
+                          : Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               subtitle: Text(
-                '(${color.colorSpanish})',
+                '(${color.spanish})',
                 style: TextStyle(
                   fontStyle: FontStyle.italic,
-                  color: color.colorSpanish == 'Blanco' ||
-                          color.colorSpanish == 'Amarillo'
-                      ? Colors.black
-                      : Colors.white,
+                  color:
+                      color.spanish == 'Blanco' || color.spanish == 'Amarillo'
+                          ? Colors.black
+                          : Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               trailing: IconButton(
                 icon: Icon(
                   Icons.audiotrack,
-                  color: color.colorSpanish == 'Blanco' ||
-                          color.colorSpanish == 'Amarillo'
-                      ? Colors.black
-                      : Colors.white,
+                  color:
+                      color.spanish == 'Blanco' || color.spanish == 'Amarillo'
+                          ? Colors.black
+                          : Colors.white,
                 ),
                 onPressed: () {
                   audioPlayer.setAsset(color.pathAudio);

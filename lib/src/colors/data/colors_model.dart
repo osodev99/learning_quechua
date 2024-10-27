@@ -1,68 +1,67 @@
-class ColorsModel {
-  final String colorSpanish;
-  final String colorQuechua;
+import 'package:x_equis/src/shared/models/base_model.dart';
+
+class ColorsModel extends BaseModel {
   final String colorHex;
-  final String pathAudio;
 
   ColorsModel({
-    required this.colorSpanish,
-    required this.colorQuechua,
+    required super.spanish,
+    required super.quechua,
     required this.colorHex,
-    required this.pathAudio,
+    required super.pathAudio,
   });
 
   static final List<ColorsModel> colorsList = [
     ColorsModel(
-      colorSpanish: "Amarillo",
-      colorQuechua: "Q'illu",
+      spanish: "Amarillo",
+      quechua: "Q'illu",
       colorHex: "#FFFF00",
       pathAudio: 'assets/audio/colors/amarillo.mp3',
     ),
     ColorsModel(
-      colorSpanish: "Anaranjado",
-      colorQuechua: "Naranja",
+      spanish: "Anaranjado",
+      quechua: "Naranja",
       colorHex: "#FFA500",
       pathAudio: 'assets/audio/colors/anaranjado.mp3',
     ),
     ColorsModel(
-      colorSpanish: "Azul",
-      colorQuechua: "Anqas",
+      spanish: "Azul",
+      quechua: "Anqas",
       colorHex: "#0000FF",
       pathAudio: 'assets/audio/colors/azul.mp3',
     ),
     ColorsModel(
-      colorSpanish: "Marrón",
-      colorQuechua: "Ch'umpi",
+      spanish: "Marrón",
+      quechua: "Ch'umpi",
       colorHex: "#A52A2A",
       pathAudio: 'assets/audio/colors/marron.mp3',
     ),
     ColorsModel(
-      colorSpanish: "Morado",
-      colorQuechua: "Kulli",
+      spanish: "Morado",
+      quechua: "Kulli",
       colorHex: "#800080",
       pathAudio: 'assets/audio/colors/morado.mp3',
     ),
     ColorsModel(
-      colorSpanish: "Negro",
-      colorQuechua: "Yana",
+      spanish: "Negro",
+      quechua: "Yana",
       colorHex: "#000000",
       pathAudio: 'assets/audio/colors/negro.mp3',
     ),
     ColorsModel(
-      colorSpanish: "Rojo",
-      colorQuechua: "Puka",
+      spanish: "Rojo",
+      quechua: "Puka",
       colorHex: "#FF0000",
       pathAudio: 'assets/audio/colors/rojo.mp3',
     ),
     ColorsModel(
-      colorSpanish: "Rosado",
-      colorQuechua: "Panti",
+      spanish: "Rosado",
+      quechua: "Panti",
       colorHex: "#FFC0CB",
       pathAudio: 'assets/audio/colors/rosado.mp3',
     ),
     ColorsModel(
-      colorSpanish: "Verde",
-      colorQuechua: "Q'omer",
+      spanish: "Verde",
+      quechua: "Q'omer",
       colorHex: "#008000",
       pathAudio: 'assets/audio/colors/verde.mp3',
     ),
