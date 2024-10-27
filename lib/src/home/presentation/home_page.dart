@@ -49,12 +49,18 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: Card(
-              margin: const EdgeInsets.all(12),
-              child: Center(
-                child: Text(
-                  'Juego',
-                  style: textStyle.displaySmall,
+            child: GestureDetector(
+              onTap: () => Navigator.pushNamed(
+                context,
+                AppRoutes.game,
+              ),
+              child: Card(
+                margin: const EdgeInsets.all(12),
+                child: Center(
+                  child: Text(
+                    'Juego',
+                    style: textStyle.displaySmall,
+                  ),
                 ),
               ),
             ),
