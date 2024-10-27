@@ -1,25 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
-import 'package:x_equis/core/utils/color_util.dart';
-import 'package:x_equis/src/colors/data/colors_model.dart';
+import 'package:x_equis/src/numbers/data/numbers_model.dart';
 
-class ColorsPage extends StatefulWidget {
-  const ColorsPage({super.key});
+class NumbersPage extends StatefulWidget {
+  const NumbersPage({super.key});
 
   @override
-  State<ColorsPage> createState() => _ColorsPageState();
+  State<NumbersPage> createState() => _NumbersPageState();
 }
 
-class _ColorsPageState extends State<ColorsPage> {
+class _NumbersPageState extends State<NumbersPage> {
   final audioPlayer = AudioPlayer();
 
   @override
   Widget build(BuildContext context) {
-    final colorList = ColorsModel.colorsList;
+    final numbersList = NumbersModel.numbersList;
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Colores'),
+        title: const Text('Números'),
         actions: [
           IconButton(
             icon: const Icon(Icons.help_outline),
@@ -30,7 +29,7 @@ class _ColorsPageState extends State<ColorsPage> {
                   return AlertDialog(
                     title: const Text('Instrucciones'),
                     content: const Text(
-                      'Presiona el icono de audio para escuchar la pronunciación en quechua de cada color.',
+                      'Presiona el icono de audio para escuchar la pronunciación en quechua de cada número.',
                     ),
                     actions: [
                       TextButton(
@@ -48,47 +47,45 @@ class _ColorsPageState extends State<ColorsPage> {
         ],
       ),
       body: ListView.builder(
-        itemCount: colorList.length,
+        itemCount: numbersList.length,
         itemBuilder: (context, index) {
-          final color = colorList[index];
+          final number = numbersList[index];
 
           return Card(
             margin: const EdgeInsets.all(8),
-            color: ColorUtil.hexToColor(color.colorHex),
             child: ListTile(
               title: Text(
-                color.colorQuechua,
-                style: TextStyle(
-                  color: color.colorSpanish == 'Blanco' ||
-                          color.colorSpanish == 'Amarillo'
-                      ? Colors.black
-                      : Colors.white,
+                number.numberQuechua,
+                style: const TextStyle(
+                  color: Colors.black,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               subtitle: Text(
-                '(${color.colorSpanish})',
-                style: TextStyle(
+                '(${number.numberSpanish})',
+                style: const TextStyle(
                   fontStyle: FontStyle.italic,
-                  color: color.colorSpanish == 'Blanco' ||
-                          color.colorSpanish == 'Amarillo'
-                      ? Colors.black
-                      : Colors.white,
+                  color: Colors.grey,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               trailing: IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.audiotrack,
-                  color: color.colorSpanish == 'Blanco' ||
-                          color.colorSpanish == 'Amarillo'
-                      ? Colors.black
-                      : Colors.white,
+                  color: Colors.black,
                 ),
                 onPressed: () {
-                  audioPlayer.setAsset(color.pathAudio);
+                  audioPlayer.setAsset(number.pathAudio);
                   audioPlayer.play();
                 },
+              ),
+              leading: Text(
+                number.number.toString(),
+                style: const TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                ),
               ),
             ),
           );
