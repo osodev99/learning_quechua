@@ -71,5 +71,59 @@ class NumbersModel extends BaseModel {
       pathAudio: 'assets/audio/numbers/10.mp3',
       number: 10,
     ),
+    NumbersModel(
+      spanish: "Veinte",
+      quechua: "Iskay Chunka",
+      pathAudio: 'assets/audio/numbers/20.mp3',
+      number: 20,
+    ),
+    NumbersModel(
+      spanish: "Treinta",
+      quechua: "Kimsa Chunka",
+      pathAudio: 'assets/audio/numbers/30.mp3',
+      number: 30,
+    ),
+    NumbersModel(
+      spanish: "Cuarenta",
+      quechua: "Tawa Chunka",
+      pathAudio: 'assets/audio/numbers/40.mp3',
+      number: 40,
+    ),
+    NumbersModel(
+      spanish: "Cincuenta",
+      quechua: "Pichqa Chunka",
+      pathAudio: 'assets/audio/numbers/50.mp3',
+      number: 50,
+    ),
+    NumbersModel(
+      spanish: "Sesenta",
+      quechua: "Soqta Chunka",
+      pathAudio: 'assets/audio/numbers/60.mp3',
+      number: 60,
+    ),
+    NumbersModel(
+      spanish: "Setenta",
+      quechua: "Qanchis Chunka",
+      pathAudio: 'assets/audio/numbers/70.mp3',
+      number: 70,
+    ),
+    NumbersModel(
+      spanish: "Ochenta",
+      quechua: "Pusaq Chunka",
+      pathAudio: 'assets/audio/numbers/80.mp3',
+      number: 80,
+    ),
+    NumbersModel(
+      spanish: "Noventa",
+      quechua: "Isqun Chunka",
+      pathAudio: 'assets/audio/numbers/90.mp3',
+      number: 90,
+    ),
+    NumbersModel(
+      spanish: "Cien",
+      quechua: "Pachak",
+      pathAudio: 'assets/audio/numbers/100.mp3',
+      number: 100,
+    ),
   ];
 }

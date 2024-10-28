@@ -19,7 +19,7 @@ class ColorsModel extends BaseModel {
     ),
     ColorsModel(
       spanish: "Anaranjado",
-      quechua: "Naranja",
+      quechua: "Qhellmo",
       colorHex: "#FFA500",
       pathAudio: 'assets/audio/colors/anaranjado.mp3',
     ),
@@ -64,6 +64,12 @@ class ColorsModel extends BaseModel {
       quechua: "Q'omer",
       colorHex: "#008000",
       pathAudio: 'assets/audio/colors/verde.mp3',
+    ),
+    ColorsModel(
+      spanish: "Blanco",
+      quechua: "Yuraq",
+      colorHex: "#FFFFFF",
+      pathAudio: 'assets/audio/colors/blanco.mp3',
     ),
   ];
 }
